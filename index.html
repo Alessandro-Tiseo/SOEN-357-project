@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Get Tutored</title>
-    <link rel="stylesheet" href="css/styles_stud.css">
-    <script src="js/theme.js" defer></script>
+    <link rel="stylesheet" href="css/styles_base.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="css/styles_stud.css">
+    <script src="js/app.js" defer></script>
 </head>
 <body>
     <nav>
         <div style="display: flex; align-items: center;">
-            <button id="userMode">Toggle Tutor Mode</button>
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <p id="userModeText">Student Mode</p>
+                <label class="switch">
+                    <script src="js/theme.js" defer></script>
+                    <input type="checkbox" id="userModeSwitch">
+                    <span class="slider round"></span>
+                </label>
+            </div>
             <h1 style="margin-left: 10px;">Tutoring Application</h1>
         </div>
     </nav>
