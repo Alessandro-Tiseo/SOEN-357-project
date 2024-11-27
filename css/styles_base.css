@@ -78,6 +78,12 @@ input:checked + .slider:before {
     transform: translateX(13px);
 }
 
+.button-container{
+    position: absolute;
+    top: 85vh;
+    left: 25vw;    
+}
+
 /* Mobile styles */
 @media (max-width: 600px) {
     header, nav, main, footer {
