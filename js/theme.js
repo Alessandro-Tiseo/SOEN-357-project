@@ -5,11 +5,11 @@ function toggleTheme(){
     const mode_text = document.getElementById('userModeText');
 
     if (toggleSwitch.checked) {
-        mode_text.innerHTML = "Tutor Mode";
+        mode_text.innerHTML = "Tutor";
         stylesheet.setAttribute('href', 'css/styles_tut.css');
     }
     else {
-        mode_text.innerHTML = "Student Mode";
+        mode_text.innerHTML = "Student";
         stylesheet.setAttribute('href', 'css/styles_stud.css');
         }
 }

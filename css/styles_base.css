@@ -1,27 +1,29 @@
 /* Base Styles */
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&display=swap");
+
+
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 header {
+    font-family: "Advent Pro", sans-serif;
     padding: 10px 0;
     text-align: center;
 }
 
 nav {
-    padding: 10px;
+    font-family: "Cabin Sketch", sans-serif;
     text-align: left;
 }
 
-nav a {
-    text-decoration: none;
-    margin: 0 10px;
-}
-
 main {
+    font-family: "Advent Pro", sans-serif;
+    font-size: 4vw;
     padding: 20px;
+    align-content: center;
 }
 
 footer {
@@ -30,6 +32,14 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+h3 {
+    font-family: "Advent Pro", sans-serif;
+}
+
+h6 {
+    font-family: "Advent Pro", sans-serif;
 }
 
 /* Toggle Switch Styles */
