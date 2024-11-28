@@ -1,15 +1,11 @@
-/* From Uiverse.io by akshat-patel28 */ 
+/* Navbar css */
 .button-container {
     display: flex;
-    background-color: rgba(71, 98, 79, 255);
-    width: 50vw;
-    height: 40px;
+    width: 90vw;
+    height: 10vw;
     align-items: center;
     justify-content: space-around;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px, 
-                rgba(71, 98, 79, 0.4) 5px 10px 15px;
-
+    border-radius: 10vw;
   }
   
   .button {
