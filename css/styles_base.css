@@ -9,14 +9,22 @@ body {
 }
 
 header {
+    margin-inside: 100px 0 100px 100px;
+    text-align: left;
+}
+
+header h1 {
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 7vw;
+}
+
+header h2 {
     font-family: "Advent Pro", sans-serif;
-    padding: 10px 0;
-    text-align: center;
+    font-size: 5vw
 }
 
 nav {
-    font-family: "Cabin Sketch", sans-serif;
-    text-align: left;
+
 }
 
 main {
@@ -90,8 +98,9 @@ input:checked + .slider:before {
 
 .button-container{
     position: absolute;
-    top: 85vh;
-    left: 25vw;    
+    bottom: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Mobile styles */
