@@ -23,7 +23,7 @@ nav {
     cursor: pointer;
   }
 
-  .buttonCurrent {
+  .active {
     background-color: rgba(82,173,156,0.5);
   }
 
