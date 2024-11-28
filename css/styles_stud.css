@@ -4,20 +4,22 @@ body {
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-}
-
-nav {
     background-color: rgba(255, 138, 91, 0.5);
     color: #333333;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px,
+                rgba(255, 138, 91, 0.4) 5px 10px 15px;
+}
+
+body {
+    background-color: #f4f4f9;
 }
 
 nav a {
     color: #fff;
 }
 
-footer {
+.button-container {
     background-color: rgba(71, 98, 79, 1);
-    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px,
+                rgba(71, 98, 79, 0.4) 5px 10px 15px;
 }
