@@ -1,12 +1,15 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const headerContainer = document.querySelector("header");
+    const headerTitle = headerContainer.getAttribute("title");
 
     // Fetch the header HTML and inject it
     fetch("components/header.html")
         .then((response) => response.text())
         .then((headerHTML) => {
             headerContainer.innerHTML = headerHTML;
+            const pageText = document.getElementById("pageText");
+            pageText.innerHTML = headerTitle;
 
             // After injection, set up the theme toggle functionality
             const toggleSwitch = document.getElementById("userModeSwitch");
