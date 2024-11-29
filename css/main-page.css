@@ -186,3 +186,50 @@
     height: 1.5rem;
   }
   
+@media (max-width: 768px) {
+    .search_bar {
+        width: 90%; 
+        max-width: 90%; 
+        height: 4rem; 
+        margin-bottom: 2rem; 
+    }
+
+    .search_input {
+        font-size: 0.9rem; 
+    }
+
+
+    .upcoming_sessions {
+        flex-direction: column;
+        width: 90%;
+        height: 50vh;
+        left: 5vw;
+        margin-bottom: 5rem;
+    }
+
+    .upcoming_sessions_title{
+        margin-bottom: 80%;
+    }
+
+    .all_card_container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 1rem;
+        height: 60%;
+        overflow-x: auto;
+        margin-top: 2rem;
+    }
+
+    .card_container {
+        width: 70%;
+        height: auto;
+        flex-direction: column;
+        flex-shrink: 0;
+    }
+
+    .class_time {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
