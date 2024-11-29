@@ -176,6 +176,16 @@
   
 @media (max-width: 768px) {
 
+    .toggle_container {
+        width: 90%; /* Expand to fit smaller screens */
+        height: 8vh;
+    }
+
+    .toggle_button {
+        font-size: 1.2rem; /* Adjust font size for better readability */
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
     .upcoming_sessions {
         flex-direction: column;
         width: 90%;
