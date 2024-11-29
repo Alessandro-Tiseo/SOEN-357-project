@@ -1,9 +1,9 @@
 const mockData = [
-    {className: 'Calculus 2', teacherName: "Tim", time: "10:15 AM to 11:15 AM" },
-    {className: 'English 103', teacherName: "Orange", time: "10:15 AM to 11:15 AM" },
-    {className: 'Linear Algebra 2', teacherName: "Berny", time: "9:15 AM to 10:15 AM" },
-    {className: 'French 101', teacherName: "Cucomber", time: "12:15 PM to 1:15 PM" },
-    {className: 'French 101', teacherName: "Cucomber", time: "12:15 PM to 1:15 PM" }
+    {TutorName: 'Tim', ClassName: "Calculus 2", time: "10:15 AM to 11:15 AM" },
+    {TutorName: 'Orange', ClassName: "English 103", time: "10:15 AM to 11:15 AM" },
+    {TutorName: 'Cucomber', ClassName: "Calculus 1", time: "9:15 AM to 10:15 AM" },
+    {TutorName: 'Berny', ClassName: "Calculus 4", time: "9:15 AM to 10:15 AM" },
+    {TutorName: 'Berny', ClassName: "Calculus 3", time: "9:15 AM to 10:15 AM" },
 ];
 
 
@@ -16,11 +16,11 @@ function createCard(session) {
 
     const className = document.createElement("h4");
     className.className = "class_name";
-    className.textContent = session.className;
+    className.textContent = session.TutorName;
 
     const teacherName = document.createElement("h5");
     teacherName.className = "teacher_name";
-    teacherName.textContent = `with ${session.teacherName}`;
+    teacherName.textContent = `Teaching ${session.ClassName}`;
 
     const classTime = document.createElement("div");
     classTime.className = "class_time";
@@ -101,4 +101,24 @@ cards.addEventListener("touchmove", (e) => {
 
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    // Get references to both buttons
+    const studentsBtn = document.getElementById("studentsBtn");
+    const tutorsBtn = document.getElementById("tutorsBtn");
   
+    // Add event listener for Students button
+    studentsBtn.addEventListener("click", () => {
+      if (!studentsBtn.classList.contains("active")) {
+        studentsBtn.classList.add("active");
+        tutorsBtn.classList.remove("active");
+      }
+    });
+  
+    // Add event listener for Tutors button
+    tutorsBtn.addEventListener("click", () => {
+      if (!tutorsBtn.classList.contains("active")) {
+        tutorsBtn.classList.add("active");
+        studentsBtn.classList.remove("active");
+      }
+    });
+  });

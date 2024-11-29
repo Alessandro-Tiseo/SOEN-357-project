@@ -4,12 +4,8 @@ CREATE TABLE `student` (
     `password` varchar(45) NOT NULL,
     `given_name` varchar(45) NOT NULL,
     `surname` varchar(45) NOT NULL,
-
-    CONSTRAINT `uq_student_email`
-    UNIQUE(`email`),
-
-    CONSTRAINT `student_id`
-    PRIMARY KEY(`id`)
+    CONSTRAINT `uq_student_email` UNIQUE(`email`),
+    CONSTRAINT `student_id` PRIMARY KEY(`id`)
 );
 
 --Add Students

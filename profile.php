@@ -35,7 +35,6 @@ if(!isset($_SESSION['email'])){
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
             </div>
-            </div>
         </div>
         <div>
             <form action="./components/logout.php" method="POST">
