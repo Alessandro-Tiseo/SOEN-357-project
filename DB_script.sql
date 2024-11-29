@@ -5,6 +5,9 @@ CREATE TABLE `student` (
     `given_name` varchar(45) NOT NULL,
     `surname` varchar(45) NOT NULL,
 
+    CONSTRAINT `uq_student_email`
+    UNIQUE(`email`),
+
     CONSTRAINT `student_id`
     PRIMARY KEY(`id`)
 )
