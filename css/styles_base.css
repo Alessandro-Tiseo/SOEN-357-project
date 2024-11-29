@@ -92,13 +92,6 @@ input:checked + .slider:before {
     transform: translateX(13px);
 }
 
-nav{
-    position: absolute;
-    bottom: 5vh;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 /* Mobile styles */
 @media (max-width: 600px) {
     header, nav, main, footer {
