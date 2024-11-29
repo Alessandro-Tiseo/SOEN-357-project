@@ -92,6 +92,70 @@ input:checked + .slider:before {
     transform: translateX(13px);
 }
 
+
+.search_bar {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 80vw;
+    margin: 1rem auto;
+    height: 2rem;
+}
+
+.search_input {
+    flex: 1;
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    margin-right: 1rem;
+    caret-color: #ffffff;
+}
+
+.search_input::placeholder {
+    font-family: "Cabin Sketch", sans-serif;
+}
+
+.search_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.search_button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.search_icon {
+    stroke: #ffffff;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.main_content {
+    display: flex;
+    align-items: center;
+    border-radius: 40px;
+    justify-content: center;
+
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 80vw;
+    max-height: 65vh;
+}
+
 /* Mobile styles */
 @media (max-width: 600px) {
     header, nav, main, footer {
