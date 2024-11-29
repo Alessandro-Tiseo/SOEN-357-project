@@ -1,33 +1,38 @@
-/* Navbar css */
+/* Navbar CSS */
 .button-container {
-    display: flex;
-    background-color: rgba(71, 98, 79, 255);
-    width: 50vw;
-    height: 60px;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 10vw;
-  }
-  
-  .button {
-    outline: 0;
-    border: 0 ;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    transition: all ease-in-out 0.3s;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    transform: translateY(-4px);
-  }
-  
-  .icon {
-    font-size: 20px;
-  }
+  position: fixed; /* Changed from absolute to fixed */
+  display: flex;
+  background-color: rgba(71, 98, 79, 255);
+  width: 50vw;
+  height: 60px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10vw;
+  top: 85vh; 
+  left: 50%;
+  transform: translateX(-50%); /* Center the navbar horizontally */
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.button {
+  outline: 0;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-4px);
+}
+
+.icon {
+  font-size: 20px;
+}
