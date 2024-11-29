@@ -8,6 +8,8 @@ CREATE TABLE `student` (
     CONSTRAINT `student_id` PRIMARY KEY(`id`)
 );
 
-INSERT INTO `student` (`email`, `password`, `given_name`, `surname`) 
-VALUES 
-('Molson@Concordia.ca', 'JMSB', 'John', 'Molson');
+--Add Students
+INSERT INTO `student` (`email`, `password`, `given_name`, `surname`)
+VALUES ('Molson@Concordia.ca', 'JMSB', 'John', 'Molson');
+INSERT INTO `student` (`email`, `password`, `given_name`, `surname`)
+VALUES ('validemail@yahoo.ca', 'MyPwd', 'Guy', 'Concordia');
