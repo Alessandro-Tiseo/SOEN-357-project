@@ -1,5 +1,5 @@
 /* Navbar CSS */
-.button-container {
+nav {
   position: fixed; /* Changed from absolute to fixed */
   display: flex;
   background-color: rgba(71, 98, 79, 255);
@@ -27,6 +27,10 @@
   color: #fff;
   transition: all ease-in-out 0.3s;
   cursor: pointer;
+}
+
+.active {
+    background-color: rgba(82,173,156,0.5);
 }
 
 .button:hover {
