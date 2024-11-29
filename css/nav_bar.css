@@ -1,8 +1,14 @@
 /* Navbar css */
 nav {
     display: flex;
+<<<<<<< Updated upstream
     width: 90vw;
     height: 10vw;
+=======
+    background-color: rgba(71, 98, 79, 255);
+    width: 50vw;
+    height: 60px;
+>>>>>>> Stashed changes
     align-items: center;
     justify-content: space-around;
     border-radius: 10vw;
@@ -10,9 +16,15 @@ nav {
   
   .button {
     outline: 0;
+<<<<<<< Updated upstream
     border: 0;
     width: 40px;
     height: 40px;
+=======
+    border: 0 ;
+    width: 60px;
+    height: 60px;
+>>>>>>> Stashed changes
     border-radius: 50%;
     background-color: transparent;
     display: flex;
@@ -28,7 +40,7 @@ nav {
   }
 
   .button:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
   }
   
   .icon {
