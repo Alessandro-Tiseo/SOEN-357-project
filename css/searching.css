@@ -135,6 +135,45 @@
     width: 60vw;
 }
 
+.toggle_container {
+    display: flex;
+    background-color: #47624f;
+    border-radius: 25px;
+    padding: 5px;
+    width: 50vw; /* Adjust width as needed */
+    height: 10vh; /* Adjust height as needed */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 1rem auto;
+    align-items: center;
+  }
+  
+  .toggle_button {
+    font-family: "Gloria Hallelujah", sans-serif;
+    font-size: 1.5rem;
+    flex: 1;
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+  }
+  
+  .toggle_button.active {
+    background-color: #7aae95;
+    color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .toggle_button:hover {
+    background-color: rgba(122, 174, 161, 0.8);
+}
+
+
+  
+  
 @media (max-width: 768px) {
 
     .upcoming_sessions {
