@@ -8,32 +8,15 @@
     <link rel="stylesheet" href="css/nav_bar.css">
     <link rel="stylesheet" href="css/main-page.css">
     <link id="theme-stylesheet" rel="stylesheet" href="css/styles_stud.css">
-    <script src="js/pageSetup.js" defer></script>
+    <script src="js/header.js" defer></script>
     <script src="js/app.js" defer></script>
 </head>
 <body>
-    <nav>
-        <div style="display: flex; align-items: center;">
-            <div style="display: flex; flex-direction: column; align-items: center;">
-                <p id="userModeText">Student Mode</p>
-                <label class="switch">
-                    <script src="js/theme.js" defer></script>
-                    <input type="checkbox" id="userModeSwitch">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-            <h1 style="margin-left: 10px;">Tutoring Application</h1>
-        </div>
-    </nav>
-    <p>Welcome Back, Jim</p>
-    <div class="upcoming_sessions">
-        <p class="upcoming_sessions_title">Upcoming Sessions</p>
-        <div class="card_container">
-
-        </div>
-    </div>
-    
-    <div class="button-container">
+    <header title="Tutoring Application"></header> <!-- Placeholder for the header -->
+    <main style="display: flex; justify-content: center;">
+        <h3>Welcome Back, Jim</h3>
+    </main>
+    <nav class="button-container">
         <a href="index.html">
             <button class="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1024 1024" stroke-width="0" fill="currentColor" stroke="currentColor" class="icon">
@@ -66,6 +49,6 @@
                 <path d="M20 2H4c-1.1 0-2 .9-2 2v16l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 10H6V9h12v3zm0-4H6V5h12v3z"/></svg>
             </button>
         </a>
-    </div>
+    </nav>
 </body>
 </html>

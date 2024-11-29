@@ -23,6 +23,10 @@ header h2 {
     font-size: 5vw
 }
 
+nav {
+
+}
+
 main {
     font-family: "Advent Pro", sans-serif;
     font-size: 4vw;
@@ -92,7 +96,7 @@ input:checked + .slider:before {
     transform: translateX(13px);
 }
 
-nav {
+.button-container{
     position: absolute;
     bottom: 5vh;
     left: 50%;

@@ -18,7 +18,7 @@ nav a {
     color: #fff;
 }
 
-nav {
+.button-container {
     background-color: rgba(255, 138, 91, 1);
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px,
                 rgba(255, 138, 91, 0.4) 5px 10px 15px;
