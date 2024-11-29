@@ -23,3 +23,15 @@ nav {
     box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px,
                 rgba(71, 98, 79, 0.4) 5px 10px 15px;
 }
+
+.search_bar {
+    background-color: #47624f;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+.search_input::placeholder {
+    color: rgba(0, 0, 0, 0.35);
+}
+
+.main_content {
+    background-color: rgba(71, 98, 79, 0.5);
+}

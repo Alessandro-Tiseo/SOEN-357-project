@@ -11,9 +11,29 @@
     <script src="js/app.js" defer></script>
 </head>
 <body>
+    
     <header title="Calendar"></header> <!-- Placeholder for the header -->
-    <main style="display: flex; justify-content: center;">
-        <h3>Welcome to your calendar, Jim</h3>
+    <main style="display: flex; justify-content: center; align-items: flex-start; height: 100vh; padding-top: 50px;">
+        <div>
+            <h3>Select a Date and Time for Your Schedule</h3>
+            <label for="schedule-date">Choose a date:</label>
+            <input type="date" id="schedule-date" required>
+    
+            <label for="schedule-time">Choose a time:</label>
+            <input type="time" id="schedule-time" required>
+    
+            <button id="submit-button">Confirm Date & Time</button>
+            <div id="result"></div>
+        </div>
+        <script>
+            document.getElementById('submit-button').addEventListener('click', () => {
+                const date = document.getElementById('schedule-date').value;
+                const time = document.getElementById('schedule-time').value;
+                const result = document.getElementById('result');
+    
+                result.textContent = date && time ? `Scheduled for ${date} at ${time}` : 'Please select both a date and time.';
+            });
+        </script>
     </main>
     <nav></nav>  <!-- Placeholder for the navbar -->
 </body>

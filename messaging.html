@@ -12,8 +12,36 @@
 </head>
 <body>
     <header title="Messages"></header> <!-- Placeholder for the header -->
-    <main style="display: flex; justify-content: center;">
-        <h3>Here are your messages, Jim</h3>
+    <main style="display: flex; flex-direction: column; justify-content: center;">
+        <div class="search_bar">
+            <input type="text" class="search_input" placeholder="Search For Tutors">
+            <button class="search_button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" fill="none" stroke="currentColor" class="search_icon">
+                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="main_content message_container">
+            <div class="message_card">
+                <div class="message_card_header">
+                    <h3>John Doe</h3>
+                    <p>2:30 PM</p>
+                </div>
+                <div class="message_card_body">
+                    <p>Hey, can you help me with my math homework?</p>
+                </div>
+            </div>
+            <div class="message_card">
+                <div class="message_card_header">
+                    <h3>Jane Doe</h3>
+                    <p>3:00 PM</p>
+                </div>
+                <div class="message_card_body">
+                    <p>Can you help me with my science project?</p>
+                </div>
+            </div>
+        </div>
     </main>
     <nav></nav>  <!-- Placeholder for the navbar -->
 </body>
