@@ -18,6 +18,8 @@ CREATE TABLE `tutor` (
     `password` varchar(45) NOT NULL,
     `given_name` varchar(45) NOT NULL,
     `surname` varchar(45) NOT NULL,
+    `phone_number` varchar(45),
+    `online_availability` TINYINT(1),
 
     CONSTRAINT `uq_tutor_email`
     UNIQUE(`email`),
