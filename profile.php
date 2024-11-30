@@ -1,10 +1,5 @@
 <?php
-//If the user is not logged in then send them to the log in page.
-session_start();
-if(!isset($_SESSION['email'])){
-    header("Location: ./login.php");
-    exit();
-}
+include './components/verify.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -34,7 +29,6 @@ if(!isset($_SESSION['email'])){
                     in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
-            </div>
             </div>
         </div>
         <div>
