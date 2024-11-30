@@ -9,6 +9,66 @@
     <link id="theme-stylesheet" rel="stylesheet" href="css/styles_stud.css">
     <script src="js/pageSetup.js" defer></script>
     <script src="js/app.js" defer></script>
+    <style>
+        /* button */
+        #submit-button {
+            background-color: #dcd6d6; 
+            color: #f48fb1; 
+            padding: 12px 24px; 
+            font-size: 20px; 
+            border: none; 
+            border-radius: 8px;
+            cursor: pointer; 
+            font-weight: bold; 
+            transition: background-color 0.3s ease, transform 0.3s ease; 
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 1px black;
+            box-shadow: 1px 2px 4px black;
+        }
+
+        
+        #submit-button:hover {
+            background-color: #f48fb1; 
+            color: white;
+            transform: scale(1.50); 
+        }
+
+        #buttonStyle {
+            text-align: center; 
+            margin-top: 50px; 
+        }
+
+        /* date */
+
+ .enterLabel {
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.enterInfo {
+    padding: 8px;
+    border: 2px solid #b0bec5;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.enterInfo:hover {
+    border-color: #e7400d;
+    
+    background-color: #fff3e0;
+}
+
+
+    </style>
 </head>
 <body>
     
@@ -16,22 +76,33 @@
     <main style="display: flex; justify-content: center; align-items: flex-start; height: 100vh; padding-top: 50px;">
         <div>
             <h3>Select a Date and Time for Your Schedule</h3>
-            <label for="schedule-date">Choose a date:</label>
-            <input type="date" id="schedule-date" required>
+            <label for="schedule-date" id ="labelSchedule"class="enterLabel">Choose a date:</label>
+            <input type="date" id="schedule-date" class="enterInfo" required>
     
-            <label for="schedule-time">Choose a time:</label>
-            <input type="time" id="schedule-time" required>
-    
-            <button id="submit-button">Confirm Date & Time</button>
-            <div id="result"></div>
+            <label for="schedule-time" class="enterLabel">Choose a time:</label>
+            <input type="time" id="schedule-time" class="enterInfo" required>
+            <br>
+            <div id="buttonStyle">
+                <button id="submit-button">Confirm Date & Time</button>
+            </div>
+            <br><br>
+            <div id="time-Selected"></div>
+
+
+            <br>
+            <br>
         </div>
         <script>
             document.getElementById('submit-button').addEventListener('click', () => {
                 const date = document.getElementById('schedule-date').value;
                 const time = document.getElementById('schedule-time').value;
-                const result = document.getElementById('result');
+                const timeSelected = document.getElementById('time-Selected');
     
-                result.textContent = date && time ? `Scheduled for ${date} at ${time}` : 'Please select both a date and time.';
+                if (date && time) {
+                    timeSelected.innerHTML = `Scheduled for ${date} at ${time} <br><br>`;
+                } else {
+                    timeSelected.innerHTML = 'Invalid. Please select both a date and time.';
+                    }
             });
         </script>
     </main>

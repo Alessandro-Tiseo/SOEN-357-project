@@ -39,3 +39,4 @@ include './components/verify.php';
     <nav></nav>  <!-- Placeholder for the navbar -->
 </body>
 </html>
+
