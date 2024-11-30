@@ -18,6 +18,12 @@ include './components/verify.php';
     <header title="Profile"></header> <!-- Placeholder for the header -->
     <main style="display: flex; justify-content: center;">
         <div class="grid-container">
+            <div class="grid-item">
+                <form action="./components/logout.php" method="POST">
+                    <input type="submit" value="Logout">
+                    <input type="submit" value="Edit Profile">
+                </form>
+            </div>
             <div class="grid-item icon"><img src="./images/profile.png"/></div>
             <div class="grid-item name"><h3><?php echo $_SESSION['given_name'] . " " . $_SESSION['surname'] ?></h3><br></div>
             <div class="grid-item bio"> 
@@ -30,12 +36,6 @@ include './components/verify.php';
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
             </div>
-        </div>
-        <div>
-            <form action="./components/logout.php" method="POST">
-                <input type="submit" value="Logout">
-                <input type="submit" value="Edit Profile">
-            </form>
         </div>
     </main>
     <nav></nav>  <!-- Placeholder for the navbar -->
