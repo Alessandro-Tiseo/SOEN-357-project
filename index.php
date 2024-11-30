@@ -20,7 +20,6 @@ include './components/verify.php';
     <main style="display: flex; justify-content: center;">
         <h3>Welcome Back, <?php echo $_SESSION['surname'] ?></h3>
     </main>
-    
     <div class="search_bar">
         <input type="text" class="search_input" placeholder="Search For Tutors">
         <button class="search_button">
@@ -29,11 +28,9 @@ include './components/verify.php';
           </svg>
         </button>
     </div>
-
     <div class="upcoming_sessions">
          <h2 class="upcoming_sessions_title">Upcoming sessions</h2>
          <div class="all_card_container">
-
          </div>
     </div>
     <nav></nav>  <!-- Placeholder for the navbar -->

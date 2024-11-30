@@ -1,10 +1,5 @@
 <?php
-//If the user is not logged in then send them to the log in page.
-session_start();
-if(!isset($_SESSION['email'])){
-    header("Location: ./login.php");
-    exit();
-}
+include './components/verify.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +18,13 @@ if(!isset($_SESSION['email'])){
     <header title="Profile"></header> <!-- Placeholder for the header -->
     <main style="display: flex; justify-content: center;">
         <div class="grid-container">
+            <!-- Placeholder edit button but the logout button will call the respective php file. -->
+            <div class="grid-item">
+                <form action="./components/logout.php" method="POST">
+                    <input type="submit" value="Logout">
+                    <input type="submit" value="Edit Profile">
+                </form>
+            </div>
             <div class="grid-item icon"><img src="./images/profile.png"/></div>
             <div class="grid-item name"><h3><?php echo $_SESSION['given_name'] . " " . $_SESSION['surname'] ?></h3><br></div>
             <div class="grid-item bio"> 
@@ -35,12 +37,6 @@ if(!isset($_SESSION['email'])){
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
             </div>
-        </div>
-        <div>
-            <form action="./components/logout.php" method="POST">
-                <input type="submit" value="Logout">
-                <input type="submit" value="Edit Profile">
-            </form>
         </div>
     </main>
     <nav></nav>  <!-- Placeholder for the navbar -->
