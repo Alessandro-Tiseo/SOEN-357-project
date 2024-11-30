@@ -1,6 +1,3 @@
-<?php
-include './components/verify.php';
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,16 +6,16 @@ include './components/verify.php';
     <title>Get Tutored</title>
     <link rel="stylesheet" href="css/styles_base.css">
     <link rel="stylesheet" href="css/nav_bar.css">
-    <link rel="stylesheet" href="css/main-page.css">
     <link id="theme-stylesheet" rel="stylesheet" href="css/styles_stud.css">
+    <link id="theme-stylesheet" rel="stylesheet" href="css/searching.css">
     <script src="js/pageSetup.js" defer></script>
+    <script src="js/search_tutor.js" defer></script>
     <script src="js/app.js" defer></script>
-    <script src="js/upcoming_sessions.js" defer></script>
 </head>
 <body>
-    <header title="Tutoring Application"></header> <!-- Placeholder for the header -->
+    <header title="Search for Tutors"></header> <!-- Placeholder for the header -->
     <main style="display: flex; justify-content: center;">
-        <h3>Welcome Back, <?php echo $_SESSION['surname'] ?></h3>
+        <h3>Time to find your tutors, Jim</h3>
     </main>
     <div class="search_bar">
         <input type="text" class="search_input" placeholder="Search For Tutors">
@@ -28,12 +25,19 @@ include './components/verify.php';
           </svg>
         </button>
     </div>
-    <div class="upcoming_sessions">
-         <h2 class="upcoming_sessions_title">Upcoming sessions</h2>
-         <div class="all_card_container">
-         </div>
+
+    <div class="toggle_container">
+        <button class="toggle_button" id="studentsBtn">Students</button>
+        <button class="toggle_button active" id="tutorsBtn">Tutors</button>
     </div>
-    <nav></nav>  <!-- Placeholder for the navbar -->
+      
+    <div class="upcoming_sessions">
+        <h2 class="upcoming_sessions_title">Find Your Tutor</h2>
+        <div class="all_card_container">
+
+        </div>
+   </div>
+
+    <nav class="navbar"></nav>  <!-- Placeholder for the navbar -->
 </body>
 </html>
-

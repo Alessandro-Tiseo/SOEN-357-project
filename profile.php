@@ -37,6 +37,12 @@ include './components/verify.php';
                 </p>
             </div>
         </div>
+        <div>
+            <form action="./components/logout.php" method="POST">
+                <input type="submit" value="Logout">
+                <input type="submit" value="Edit Profile">
+            </form>
+        </div>
     </main>
     <nav></nav>  <!-- Placeholder for the navbar -->
 </body>

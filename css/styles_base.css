@@ -118,6 +118,7 @@ input:checked + .slider:before {
 }
 
 .search_input::placeholder {
+    color: #ffffff;
     font-family: "Cabin Sketch", sans-serif;
 }
 
@@ -156,6 +157,10 @@ input:checked + .slider:before {
     max-height: 65vh;
 }
 
+.navbar{
+    height: 5rem;
+    width: 60vw;
+}
 /* Mobile styles */
 @media (max-width: 600px) {
     header, nav, main, footer {

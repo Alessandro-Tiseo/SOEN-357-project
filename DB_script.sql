@@ -4,12 +4,8 @@ CREATE TABLE `student` (
     `password` varchar(45) NOT NULL,
     `given_name` varchar(45) NOT NULL,
     `surname` varchar(45) NOT NULL,
-
-    CONSTRAINT `uq_student_email`
-    UNIQUE(`email`),
-
-    CONSTRAINT `student_id`
-    PRIMARY KEY(`id`)
+    CONSTRAINT `uq_student_email` UNIQUE(`email`),
+    CONSTRAINT `student_id` PRIMARY KEY(`id`)
 );
 
 CREATE TABLE `tutor` (
@@ -46,6 +42,7 @@ INSERT INTO `student` (`email`, `password`, `given_name`, `surname`)
 VALUES ('Molson@Concordia.ca', 'JMSB', 'John', 'Molson');
 INSERT INTO `student` (`email`, `password`, `given_name`, `surname`)
 VALUES ('validemail@yahoo.ca', 'MyPwd', 'Guy', 'Concordia');
+<<<<<<< HEAD
 
 INSERT INTO `tutor` (`email`, `password`, `given_name`, `surname`)
 VALUES ('Cody@Concordia.ca', 'SOEN', 'Gina', 'Cody');
@@ -60,3 +57,5 @@ INSERT INTO `session` (`student_id`, `tutor_id`, `day`, `time`, `subject`)
 VALUES ('1', '2', '2000-12-31', '11:59:00', 'MATH 205');
 INSERT INTO `session` (`student_id`, `tutor_id`, `day`, `time`, `subject`)
 VALUES ('1', '3', '2000-12-31', '13:59:00', 'MATH 204');
+=======
+>>>>>>> main
