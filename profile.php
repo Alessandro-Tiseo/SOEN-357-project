@@ -18,6 +18,7 @@ include './components/verify.php';
     <header title="Profile"></header> <!-- Placeholder for the header -->
     <main style="display: flex; justify-content: center;">
         <div class="grid-container">
+            <!-- Placeholder edit button but the logout button will call the respective php file. -->
             <div class="grid-item">
                 <form action="./components/logout.php" method="POST">
                     <input type="submit" value="Logout">
@@ -36,12 +37,6 @@ include './components/verify.php';
                     non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                 </p>
             </div>
-        </div>
-        <div>
-            <form action="./components/logout.php" method="POST">
-                <input type="submit" value="Logout">
-                <input type="submit" value="Edit Profile">
-            </form>
         </div>
     </main>
     <nav></nav>  <!-- Placeholder for the navbar -->
